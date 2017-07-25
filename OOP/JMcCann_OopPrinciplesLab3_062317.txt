@@ -1,0 +1,54 @@
+package com.astontech.console;
+
+import java.text.*;
+import java.util.*;
+import com.astontech.bo.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //Notes:    private static method for the lesson
+        LessonCollectionsLAB();
+    }
+
+    private static void LessonCollectionsLAB() {
+        List<Vehicle> VehicleCollection = new ArrayList<>();
+
+        VehicleCollection.add(new Vehicle(2016, null, "HGBH41JXQE109186","Red",false,0));
+        VehicleCollection.add(new Vehicle(2016, "AB9-75D", "1GHBN95GXQR895187","Blue",true,18963));
+        VehicleCollection.add(new Vehicle(2017, "FW9-DQ7", "1RNKQ28AXMN914863","Green",true,504932));
+        VehicleCollection.add(new Vehicle(2016, null, "1ADXY18VXQR781496","Purple",false,0));
+        VehicleCollection.add(new Vehicle(2016, "F87-FQ6", "1JNRD63FXQR678126","White",true,49763));
+        VehicleCollection.add(new Vehicle(2017, null, "1HGBH41JXMN985237","Tan",false,0));
+        VehicleCollection.add(new Vehicle(2017, "FD9-DA9", "1GHBN95GXMN184384","Yellow",true,47954));
+        VehicleCollection.add(new Vehicle(2017, "VB7-897", "1JNRD63FXMN198465","Pink",true,19843));
+        VehicleCollection.add(new Vehicle(2016, "X47-7GA", "1RNKQ28AXQR175863","Cyan",true,19876));
+        VehicleCollection.add(new Vehicle(2017, null, "1ADXY18VXMN183549","Magenta",false,0));
+
+        VehicleCollection.get(0).setVehicleModelName("Vanquish");
+        VehicleCollection.get(0).setVehicleMakeName("Aston Martin");
+        VehicleCollection.get(1).setVehicleModelName("Accent");
+        VehicleCollection.get(1).setVehicleMakeName("Hyundai");
+        VehicleCollection.get(2).setVehicleModelName("Chevrolet Corvette");
+        VehicleCollection.get(2).setVehicleMakeName("General Motors");
+        VehicleCollection.get(3).setVehicleModelName("Beetle");
+        VehicleCollection.get(3).setVehicleMakeName("Volkswagen");
+        VehicleCollection.get(4).setVehicleModelName("Camry");
+        VehicleCollection.get(4).setVehicleMakeName("Toyota");
+        VehicleCollection.get(5).setVehicleModelName("Rapide S");
+        VehicleCollection.get(5).setVehicleMakeName("Aston Martin");
+        VehicleCollection.get(6).setVehicleModelName("Equus");
+        VehicleCollection.get(6).setVehicleMakeName("Hyundai");
+        VehicleCollection.get(7).setVehicleModelName("Corolla");
+        VehicleCollection.get(7).setVehicleMakeName("Toyota");
+        VehicleCollection.get(8).setVehicleModelName("Hummber H3");
+        VehicleCollection.get(8).setVehicleMakeName("General Motors");
+        VehicleCollection.get(9).setVehicleModelName("Jetta");
+        VehicleCollection.get(9).setVehicleMakeName("Volkswagen");
+
+        for(Vehicle singleVehicle : VehicleCollection){
+            System.out.println(singleVehicle.ToString());
+        }
+
+    }

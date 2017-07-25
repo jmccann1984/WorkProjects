@@ -1,0 +1,1 @@
+create nonclustered index IDX_Ball_DrawingId_BallNumber on dbo.Ball(DrawingId, BallNumber);

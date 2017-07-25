@@ -1,0 +1,14 @@
+ALTER TABLE dbo.ClientContact ADD CONSTRAINT PK_ClientContact primary key(ClientID, EntityTypeId);
+ALTER TABLE dbo.Address ADD CONSTRAINT PK_Address primary key (AddressId);
+ALTER TABLE dbo.Phone ADD CONSTRAINT PK_Phone primary key (PhoneId);
+ALTER TABLE dbo.Project ADD CONSTRAINT PK_Project primary key (ProjectId);
+ALTER TABLE dbo.ProjectStatus ADD CONSTRAINT PK_ProjectStatus primary key (ProjectStatusId);
+ALTER TABLE dbo.EmployeeProject ADD CONSTRAINT PK_EmployeeProject primary key (EmployeeProjectId);
+ALTER TABLE dbo.Review ADD CONSTRAINT PK_Review primary key (ReviewId);
+ALTER TABLE dbo.ReviewData ADD CONSTRAINT PK_ReviewData primary key (ReviewId, EntityTypeId);
+ALTER TABLE dbo.Training ADD CONSTRAINT PK_Training primary key (TrainingId);
+ALTER TABLE dbo.TrainingData ADD CONSTRAINT PK_TrainingData primary key (TrainingId, EntityTypeId);
+ALTER TABLE [dbo].[Vehicle] ADD CONSTRAINT PK_Vehicle primary key (VehicleId);
+ALTER TABLE [dbo].[VehicleModel] ADD CONSTRAINT PK_VehicleModel primary key (VehicleModelId);
+ALTER TABLE [dbo].[VehicleMake] ADD CONSTRAINT PK_VehicleMake primary key (VehicleMakeId);
+ALTER TABLE [dbo].[VehicleStatus] ADD CONSTRAINT PK_VehicleStatus primary key ([VehicleStatusId]);

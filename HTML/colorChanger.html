@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <style>
+        .circle{
+            background-color: dimgrey;
+            border-radius: 100%;
+            font-weight: bold;
+            margin: auto;
+            padding: 0;
+            width: 10em;
+            height: 10em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            overflow: hidden;
+            border: 2px solid black;
+        }
+        
+        .btn{
+            text-align-last: center;
+            background-color: yellow;
+            border: 1px solid black;
+            position: relative;
+            left:-1px;
+            width: 10em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            margin: auto;
+            text-align: center;
+            color:black; 
+        }
+        progress{
+            background-color:white;
+        }
+        progress#reind::-webkit-progress-value {
+            background-color: darkred;
+        }
+        progress#reind::-webkit-progress-bar {
+            background-color: lightpink;
+        }
+        progress#grind::-webkit-progress-value {
+            background-color: darkgreen;
+        }
+        progress#grind::-webkit-progress-bar {
+            background-color: lightgreen;
+        }
+        progress#blind::-webkit-progress-value {
+            background-color: darkblue;
+        }
+        progress#blind::-webkit-progress-bar {
+            background-color: lightblue;
+        }
+        progress#alind::-webkit-progress-value {
+            background-color: white;
+        }
+        progress#alind::-webkit-progress-bar {
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="display: flex; flex-direction: row; clear: both; justify-content: center; margin: auto; padding: 10em;">
+        <div class = "circle" id = "red">
+            <div class = "btn" id = "redup">red up</div>
+            <div>
+            <progress id="reind" value="119" max="255"></progress>
+            </div>
+            <div class = "btn" id = "reddn">red down</div>
+        </div>
+        <div class = "circle" id = "green">
+            <div class = "btn" id = "grnup">green up</div>
+            <div>
+            <progress id="grind" value="119" max="255"></progress>
+            </div>
+            <div class = "btn" id = "grndn">green down</div>
+        </div>
+        <div class = "circle" id = "blue">
+            <div class = "btn" id = "bluup">blue up</div>
+            <div>
+            <progress id="blind" value="119" max="255"></progress>
+            </div>
+            <div class = "btn" id = "bludn">blue down</div>
+        </div>
+        <div class = "circle" id = "alpha">
+            <div class = "btn" id = "alpup">alpha up</div>
+            <div>
+            <progress id="alind" value="5" max="10"></progress>
+            </div>
+            <div class = "btn" id = "alpdn">alpha down</div>
+        </div>
+    </div>
+
+	<script src="js/colorchanger2.js"></script>
+</body>
+
+</html>

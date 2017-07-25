@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/site" />
+    <style>
+        [class*="col-"] {
+            padding: .3em;
+        }
+        .col-1 > input{
+            width: 4.5em;
+        }
+        .col-2 > input {
+            width: 15.5em;
+        }
+        .col-3 > input {
+            width: 4.5em;
+        }
+        .col-4 > input {
+            width: 4.8em;
+        }
+        .col-5 > select {
+            width: 16.5em;
+        }
+        .col-6 > select {
+            width: 16.5em;
+        }
+        
+        .col-1{
+            min-width: 4em;
+        }
+        .col-2 {
+            min-width: 13.5em;
+        }
+        .col-3 {
+            min-width: 4em;
+        }
+        .col-4 {
+            min-width: 4.3em;
+        }
+        .col-5 {
+            min-width: 14em;
+        }
+        .col-6 {
+            min-width: 14em;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="border">
+        <span class="borderTitle">Create Vehicle</span>
+        <div class="content">
+            <form name="createVehicle" action="./person" method="post" id="0">
+                <div class="content-row">
+                    <select class="make">
+                        <option value="0" class="visible">(Select Make)</option>
+                        <option value="1">Aston Martin</option>
+                        <option value="2">General Motors</option>
+                        <option value="3">Hyundai</option>
+                        <option value="4">Toyota</option>
+                        <option value="5">Volkswagen</option>
+                    </select>
+                </div>
+                <div class="content-row">
+                    <select id="model0" class="model">
+                        <option value="0" class="visible">(Select Model)</option>
+                        <option value="1" class="1">Vanquish</option>
+                        <option value="2" class="1">Rapide S</option>
+                        <option value="3" class="2">Hummber H3</option>
+                        <option value="4" class="2">Chevrolet Corvette</option>
+                        <option value="5" class="3">Accent</option>
+                        <option value="6" class="3">Equus</option>
+                        <option value="7" class="4">Camry</option>
+                        <option value="8" class="4">Corolla</option>
+                        <option value="9" class="5">Beetle</option>
+                        <option value="10" class="5">Jetta</option>
+                    </select>
+                </div>
+                <div class="content-row">
+                    <div class = "label">
+                        <label for="plate">Plate:</label>
+                    </div>
+                    <div class = "input">
+                        <input type="text" name="plate" placeholder="License Plate"/>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class = "label">
+                        <label for="vin">VIN:</label>
+                    </div>
+                    <div class = "input">
+                        <input type="text" name="vin" placeholder="VIN"/>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class = "label">
+                        <label for="year">Year:</label>
+                    </div>
+                    <div class = "input">
+                        <input type="text" name="year" placeholder="Year"/>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class = "label">
+                        <label for="color">Color:</label>
+                    </div>
+                    <div class = "input">
+                        <input type="text" name="color" placeholder="Color"/>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <input type="button" value="Add Vehicle" id="addVehicle" />
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="border" style="width: auto; text-align: left;">
+        <span class="borderTitle">Modify Vehicles</span>
+        <div class="content">
+            <div class="content-head">
+                <div class="content-row">
+                    <div class="col-1">Plate</div>
+                    <div class="col-2">VIN</div>
+                    <div class="col-3">Year</div>
+                    <div class="col-4">Color</div>
+                    <div class="col-5">Make</div>
+                    <div class="col-6">Model</div>
+                </div>
+            </div>
+            <form name="modifyVehicle1" action="./person" method="post" id="1">
+                <div class="content-row">
+                    <div class="col-1">
+                        <input type="text" name="plate" placeholder="LDC-213" maxlength="7"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" name="vin" placeholder="VIN"/>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" name="year" placeholder="Year"/>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" name="color" placeholder="Color"/>
+                    </div>
+                    <div class="col-5">
+                        <select class="make">
+                            <option value="0" class="visible">(Select Make)</option>
+                            <option value="1">Aston Martin</option>
+                            <option value="2">General Motors</option>
+                            <option value="3">Hyundai</option>
+                            <option value="4">Toyota</option>
+                            <option value="5">Volkswagen</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select id="model1" class="model">
+                            <option value="0" class="visible">(Select Model)</option>
+                            <option value="1" class="1">Vanquish</option>
+                            <option value="2" class="1">Rapide S</option>
+                            <option value="3" class="2">Hummber H3</option>
+                            <option value="4" class="2">Chevrolet Corvette</option>
+                            <option value="5" class="3">Accent</option>
+                            <option value="6" class="3">Equus</option>
+                            <option value="7" class="4">Camry</option>
+                            <option value="8" class="4">Corolla</option>
+                            <option value="9" class="5">Beetle</option>
+                            <option value="10" class="5">Jetta</option>
+                        </select>
+                    </div>
+                    <div class="col-">
+                        <input type="button" value="Update" id="updateVehicle" />
+                    </div>
+                    <div class="col-">
+                        <input type="button" value="Delete" id="deleteVehicle" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".model > option").hide();
+            $(".model > .visible").show();
+            $(".make").change(function(){
+                $(".model#model"+$(this).closest("form").attr("id")+" > option").hide();
+                $(".model#model"+$(this).closest("form").attr("id")+" > .visible").show();
+                $(".model#model"+$(this).closest("form").attr("id")+" > ."+$(this).val()).show();
+            });
+        });
+    </script>
+</body>
+
+</html>
